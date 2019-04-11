@@ -63,6 +63,9 @@ startButton.addEventListener('click', () => stopwatch.start());
 let stopButton = document.getElementById("stop");
 stopButton.addEventListener('click', () => stopwatch.stop());
 
+let resetButton = document.getElementById("reset");
+resetButton.addEventListener('click', () => stopwatch.reset());
+
 function pad0(value) {
     let result = value.toString();
     if (result.length < 2) {

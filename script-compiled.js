@@ -88,6 +88,11 @@ stopButton.addEventListener('click', function () {
 	return stopwatch.stop();
 });
 
+var resetButton = document.getElementById("reset");
+resetButton.addEventListener('click', function () {
+	return stopwatch.reset();
+});
+
 function pad0(value) {
 	var result = value.toString();
 	if (result.length < 2) {
